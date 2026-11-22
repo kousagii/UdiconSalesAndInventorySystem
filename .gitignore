@@ -1,2 +1,32 @@
+# Installed dependencies and npm cache
 node_modules/
+.npm/
+
+# Local environment and secrets; keep the setup template
 .env
+.env.*
+!.env.example
+
+# Generated database backups and machine-specific schedules
+/backups/
+/backup_*.sql
+/incremental_*.sql
+/backup-config.json
+
+# Product images uploaded at runtime (directory is created by server.js)
+/program_codes/uploads/
+
+# Logs and diagnostic output
+*.log
+npm-debug.log*
+report.*.json
+
+# Local editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~

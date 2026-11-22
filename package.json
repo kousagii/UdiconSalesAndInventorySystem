@@ -1,10 +1,14 @@
 {
   "name": "udicon",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "LAN-based sales and inventory system customized for Udicon Trading.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "check": "node --check server.js && node --check program_codes/authGuard.js && node --check program_codes/reorder-modal.js && node --check program_codes/sales-screen/sales-shared.js"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "keywords": [],
   "author": "",
